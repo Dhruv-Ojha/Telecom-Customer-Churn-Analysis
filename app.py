@@ -12,7 +12,7 @@ st.sidebar.title("TELECOM CUSTOMER CHURN ANALYSIS")
 
 st.sidebar.markdown("This app is a streamlit dashboard to analyze the customer churn data.")
 
-DATA_URL = ("C:\\Users\\Dhruv\\Documents\\ML and Data Analysis Projects\\Telecom Customer Churn Prediction\\preprocessed_data.csv")
+DATA_URL = ("preprocessed_data.csv")
 
 @st.cache_data(persist=True)
 def load_data():
