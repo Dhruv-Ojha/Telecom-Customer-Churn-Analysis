@@ -24,4 +24,4 @@ charges), and churn (which customers left within the past month when the data wa
 collected). The dataset has been preprocessed leading to the creation of a new dataset preprocessed_data.csv
 
 
-Click the link to visit the site https://telecom-churn.streamlit.app/
+# Click the link to visit the site https://telecom-churn.streamlit.app/
