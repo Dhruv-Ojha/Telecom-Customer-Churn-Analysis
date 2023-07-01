@@ -4,18 +4,17 @@ import streamlit as st
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
-from pathlib import Path
 
 st.title("TELECOM CUSTOMER CHURN ANALYSIS")
 st.sidebar.title("TELECOM CUSTOMER CHURN ANALYSIS")
 
 st.sidebar.markdown("This app is a streamlit dashboard to analyze the customer churn data.")
 
-file_path = Path("C:\\Users\\Dhruv\\Documents\\ML and Data Analysis Projects\\Telecom Customer Churn Prediction\\preprocessed_data.csv")
+DATA_URL = ("C:\\Users\\Dhruv\\Documents\\ML and Data Analysis Projects\\Telecom Customer Churn Prediction\\preprocessed_data.csv")
 
 @st.cache_data(persist=True)
 def load_data():
-    data = pd.read_csv(file_path)
+    data = pd.read_csv(DATA_URL)
     return data
 
 data = load_data()
